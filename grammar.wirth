@@ -1,0 +1,5 @@
+Program = { Expr }.
+Expr = "i"| Expr'.
+IotaExpr = "i" | Expr'.
+Expr' = "I" | ("K"|"k") | ("S"|"s") | NonemptyJotExpr | "`" Expr1 Expr2 | "*" IotaExpr1 IotaExpr2 | "(" CCExpr ")".
+NonemptyJotExpr = JotExpr 

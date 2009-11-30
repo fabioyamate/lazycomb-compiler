@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+  <type>fa</type>
+  <state name="q0" id="0">
+    <initial/>
+    <final/>
+  </state>
+  <transition>
+    <from>0</from>
+    <to>0</to>
+    <read>expr</read>
+  </transition>
+</structure>
