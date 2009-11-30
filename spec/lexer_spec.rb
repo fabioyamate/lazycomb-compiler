@@ -21,4 +21,10 @@ describe Lexer do
       end
     }.should raise_error
   end
+  
+  it "should differenciate i from I" do
+    lexer = Lexer.new('iI.lazy')
+    lexer.next_token.should == :i
+    lexer.next_token.should == :I
+  end
 end
