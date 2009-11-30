@@ -1,5 +1,19 @@
+Wirth Grammar for LazyComb Language
+-----------------------------------
+
 Program = { Expr }.
-Expr = "i"| Expr'.
-IotaExpr = "i" | Expr'.
-Expr' = "I" | ("K"|"k") | ("S"|"s") | NonemptyJotExpr | "`" Expr1 Expr2 | "*" IotaExpr1 IotaExpr2 | "(" CCExpr ")".
-NonemptyJotExpr = JotExpr 
+Expr = "i" 
+     | "I" 
+     | "K" | "k" 
+     | "S" | "s" 
+     | NonEmptyJotExpr 
+     | "`" Expr Expr 
+     | "*" Expr Expr 
+     | "(" { Expr } ")".
+NonEmptyJotExpr = { NonEmptyJotExpr } ( "0" | "1" ).
+
+inline version
+--------------
+Program = { Expr }.
+Expr = "i" | "I" | "K" | "k" | "S" | "s" | NonEmptyJotExpr | "`" Expr Expr | "*" Expr Expr | "(" { Expr } ")".
+NonEmptyJotExpr = { NonEmptyJotExpr } ( "0" | "1").
