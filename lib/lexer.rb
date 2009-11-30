@@ -9,8 +9,10 @@ class Lexer
   
   def tokenize(code)
     case code
-    when /i/i
+    when /i/
       return :i
+    when /I/
+      return :I
     when /k/i
       return :k
     when /s/i
@@ -30,7 +32,7 @@ class Lexer
     when nil
       return :eof
     else
-      raise 'Invalid token at line #{@line} and column #{@column}'
+      raise "Invalid token at line #{@line} and column #{@column}"
     end
   end
   

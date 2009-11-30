@@ -31,6 +31,8 @@ class Parser
         case @token
         when :i
           current_state = 1
+        when :I
+          current_state = 1
         when :k
           current_state = 1
         when :s

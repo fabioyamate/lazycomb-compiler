@@ -7,4 +7,16 @@ describe Parser do
     parser = Parser.new(lexer)
     parser.parse.should be_true
   end
+  
+  it "should recognize unlambda implementation" do
+    lexer = Lexer.new('unlambda.lazy')
+    parser = Parser.new(lexer)
+    parser.parse.should be_true
+  end
+  
+  it "should recognize jot implementation" do
+    lexer = Lexer.new('jot.lazy')
+    parser = Parser.new(lexer)
+    parser.parse.should be_true
+  end
 end
