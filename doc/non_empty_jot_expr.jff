@@ -1,25 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<structure>
-  <type>fa</type>
-  <state name="q0" id="0">
-    <initial/>
-  </state>
-  <state name="q1" id="1">
-    <final/>
-  </state>
-  <transition>
-    <from>0</from>
-    <to>0</to>
-    <read>NonEmptyJotExpr</read>
-  </transition>
-  <transition>
-    <from>0</from>
-    <to>1</to>
-    <read>&quot;0&quot;</read>
-  </transition>
-  <transition>
-    <from>0</from>
-    <to>1</to>
-    <read>&quot;1&quot;</read>
-  </transition>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>113.0</x>
+			<y>205.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>363.0</x>
+			<y>95.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>"1"</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>NonEmptyJotExpr</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>"0"</read>
+		</transition>
+	</automaton>
 </structure>

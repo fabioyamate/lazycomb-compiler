@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<structure>
-  <type>fa</type>
-  <state name="q0" id="0">
-    <initial/>
-    <final/>
-  </state>
-  <transition>
-    <from>0</from>
-    <to>0</to>
-    <read>expr</read>
-  </transition>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>139.0</x>
+			<y>57.0</y>
+			<initial/>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>expr</read>
+		</transition>
+	</automaton>
 </structure>
