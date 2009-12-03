@@ -1,8 +1,8 @@
 require File.dirname(__FILE__) + '/lazycomb_compiler'
 
 class Lexer
-  def initialize(file_path)
-    @source_stream = File.new(file_path, 'r')
+  def initialize(source_stream)
+    @source_stream = source_stream
     @column = 1
     @line = 1
   end
