@@ -23,8 +23,8 @@ class Semantic
   
   private
   TEMPLATE_SOURCE_CODE = <<-CODE
-#include "environment.h"
 #include <stdio.h>
+#include "vm.h"
 
 int main(void) {
   novo_escopo();

@@ -16,7 +16,6 @@ class Parser
   def parse
     @token = @lexer.next_token
     if program?
-      p Semantic.code
       return true
     else
       return false
