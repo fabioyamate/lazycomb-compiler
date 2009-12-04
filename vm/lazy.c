@@ -3,16 +3,25 @@
 
 int main(void) {
   novo_escopo();
-  entra('s');
+  entra('I');
+  tenta_reduzir();
+  novo_escopo();
+  entra('k');
+  tenta_reduzir();
+  entra('k');
   tenta_reduzir();
   entra('I');
   tenta_reduzir();
-  entra('I');
+  fecha_escopo();
   tenta_reduzir();
   novo_escopo();
   entra('I');
   tenta_reduzir();
   entra('I');
+  tenta_reduzir();
+  entra('k');
+  tenta_reduzir();
+  entra('s');
   tenta_reduzir();
   entra('I');
   tenta_reduzir();
