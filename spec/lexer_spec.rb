@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/spec_helper'
 require 'lexer' 
 
 describe Lexer do
-  it "should tokenize a valid source file" do
+  xit "should tokenize a valid source file" do
     io = StringIO.new %q{
       i ` k ( i s * 0 ( ` 1 i ) ) 0 0 1 0 1 0
       SII(SII(S(S(KS)K)I))
@@ -17,7 +17,7 @@ describe Lexer do
     }.should_not raise_error
   end
   
-  it "should not tokenize an invalid source file" do
+  xit "should not tokenize an invalid source file" do
     io = StringIO.new "a b"
     lexer = Lexer.new(io)
     lambda {
@@ -28,7 +28,7 @@ describe Lexer do
     }.should raise_error
   end
   
-  it "should differenciate i from I" do
+  xit "should differenciate i from I" do
     io = StringIO.new "i I"
     lexer = Lexer.new(io)
     lexer.next_token.should == :i
